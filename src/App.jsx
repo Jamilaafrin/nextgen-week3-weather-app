@@ -1,12 +1,12 @@
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    
       <nav className="navbar">
         <h2>🌦️ Weather App</h2>
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    
   );
 }
 
