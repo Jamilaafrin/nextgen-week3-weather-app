@@ -6,10 +6,9 @@ import About from "./pages/About.jsx";
 
 function App() {
   return (
-    <>
+    <div>
       <nav className="navbar">
         <h2>🌦️ Weather App</h2>
-
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
@@ -20,7 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
